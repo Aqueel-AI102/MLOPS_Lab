@@ -1,6 +1,12 @@
 {
+<<<<<<< HEAD
   "total_rows_after_cleaning": 1915,
   "dtype_errors": 0,
   "range_violations": 0,
+=======
+  "total_rows_after_cleaning": 688,
+  "dtype_errors": 0,
+  "range_violations": 1207,
+>>>>>>> c6682f99dc999e3fc7b7f2a8b9a0bcf04fe51099
   "null_violations": 0
 }
