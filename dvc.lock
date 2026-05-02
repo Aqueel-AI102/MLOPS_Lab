@@ -5,24 +5,24 @@ stages:
     deps:
     - path: data/raw/ratings.csv
       hash: md5
-      md5: dff8efc826e909fc3f52ca1a55a1af7d
-      size: 42779
+      md5: 4efadf355ff38050f2d20cd488e62eba
+      size: 70039
     - path: src/process_ratings.py
       hash: md5
-      md5: 7d169f7c062d5b21a5995dd74c8d4b77
-      size: 1545
+      md5: 7003444ba998efe4eb7338e0c8208d22
+      size: 1557
     outs:
     - path: data/processed/ratings_clean.csv
       hash: md5
-      md5: 5f463e876256baf5ecb0b1aa540fa327
-      size: 40598
+      md5: c6cb91849ab696db152de72b0b09dfa5
+      size: 66095
   features:
     cmd: python src/create_features.py
     deps:
     - path: data/processed/ratings_clean.csv
       hash: md5
-      md5: 5f463e876256baf5ecb0b1aa540fa327
-      size: 40598
+      md5: c6cb91849ab696db152de72b0b09dfa5
+      size: 66095
     - path: src/create_features.py
       hash: md5
       md5: 203758e8f1cb6368cba9b9355e573236
@@ -30,5 +30,5 @@ stages:
     outs:
     - path: models/user_similarity.pkl
       hash: md5
-      md5: f97affced7ffd86ab91ff4ec9076e71d
-      size: 384670
+      md5: d8829347a0237de26b60dbc1ff5fbb25
+      size: 350246

@@ -24,7 +24,7 @@ def validate_ratings(df):
 def process_ratings():
     """Load, validate, and save clean ratings."""
     logger.info("Loading raw ratings...")
-    df = pd.read_csv('data/raw/ratings.csv')
+    df = pd.read_csv('data/raw/ratings.csv', sep=r'\s+')
     logger.info(f"Loaded {len(df)} ratings")
     
     # Validate
